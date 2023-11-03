@@ -67,7 +67,7 @@ jobs:
   frontend-checks:
     runs-on: ubuntu-latest
     needs: changes
-    if: ${{ needs.changes.outputs.frontend == 'true' }}
+    # if: ${{ needs.changes.outputs.frontend == 'true' }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
